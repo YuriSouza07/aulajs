@@ -22,7 +22,13 @@ console.log("Notas dos alunos:");
 for (let i = 0; i < alunos.length; i++) { 
     console.log(alunos[i] + ": " + notas[i]); 
 } 
-
+ for (let i = 0; i < notas.length; i++){
+    for (let j = 0; j < notas[i].length; j++) {
+        if (notas[i][j] > maiorNota) {
+            maiorNota = notas[i][j];
+        }
+    }
+}
  
 
  
